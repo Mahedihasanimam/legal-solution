@@ -24,6 +24,11 @@
     p{
         color: #707070;
     }
+    .banner-img{
+        background:linear-gradient(180deg, #111 0%, rgba(17, 17, 17, 0.00) 100%), url('./images/banner.png');
+       
+
+    }
 </style>
 <!-- tailwind custom style  -->
 <script>
@@ -33,6 +38,7 @@
           colors: {
             'my-primary': '#B68C5A',
             'my-secoundery': '#F3F3F3',
+            'banner-img': "url('./imges/banner.png')",
           }
         }
       }
@@ -77,12 +83,14 @@
               </div>
         </nav>
         <!-- banner section  -->
-        <div class="container">
-            <h1>We Provide Effective Legal Solutions</h1>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-            <div class="flex">
-                <input type="search" name="search you service" id="">
-                <button class="btn bg-my-primary text-white">Search</button>
+        <div class="container mx-auto text-center banner-img  py-32 space-y-8 bg-center">
+            <div class="lg:w-1/2 mx-auto px-4">
+                <h1 class="text-white lg:text-7xl text-3xl font-extrabold p-6">We Provide Effective Legal Solutions</h1>
+            <p class="text-white opacity-70">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <div class="flex gap-5 justify-center mt-8">
+                <input class="lg:w-1/2 p-5 rounded-md outline-none" type="search" name="search you service" id="" placeholder="Search your services" >
+                <button class="btn w-36 h-16 bg-my-primary text-white  rounded-md border-none hover:bg-my-primary text-4 font-semibold ">Search</button>
+            </div>
             </div>
         </div>
     </header>
